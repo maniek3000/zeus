@@ -1,5 +1,6 @@
-package com.maciejopolski.module.book;
+package com.maciejopolski.module.book.repository;
 
+import com.maciejopolski.module.book.entity.BookEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
