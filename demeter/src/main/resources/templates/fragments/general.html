@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>General</title>
+</head>
+<body>
+
+<header th:fragment="header">
+  <h1>Page Header</h1>
+</header>
+
+<nav th:fragment="menu">
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</nav>
+
+<section th:fragment="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sem turpis, sed congue dolor maximus vitae. Pellentesque consectetur porttitor nunc eu cursus. Fusce a mauris eu ante finibus viverra. Cras a hendrerit est. Etiam laoreet ipsum posuere eros viverra</p>
+</section>
+
+<footer th:fragment="footer">
+  by Maciej Opolski, 2021
+</footer>
+
+</body>
+</html>
