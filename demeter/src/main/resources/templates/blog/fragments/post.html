@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment Template</title>
+</head>
+<body>
+
+<!--<section th:fragment="template"> ..content… </section>-->
+
+<div th:fragment="template(post)" class="blog-post">
+    <h2 class="blog-post-title" th:text="${post.title}">...</h2>
+
+    <p class="blog-post-meta">
+        <span th:text="${post.date}"></span> <a href="#" th:text="${post.author}">Mark</a>
+    </p>
+
+    <p th:text="${post.content}"></p>
+    <a th:href="@{/blog/{id}(id=${post.id})}">view</a>
+
+</div>
+
+</body>
+</html>

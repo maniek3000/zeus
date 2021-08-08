@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment Template</title>
+</head>
+<body>
+
+<!--<section th:fragment="template"> ..content… </section>-->
+
+<div th:fragment="template" class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted"
+           th:each="item : ${items}"
+           th:text="${item.name}"
+           href="#">... menu template...</a>
+    </nav>
+</div>
+
+</body>
+</html>
